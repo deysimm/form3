@@ -5,26 +5,27 @@
 <h2>Calculator</h2>
 
 <h3>Cabinet Specifications</h3>
-
+<form onsubmit="myFunction()">
 <label>Width</label>
-<input id="numb" placeholder="in">
+<input id="width" placeholder="in">
 
 <label>Height</label>
-<input id="numb" placeholder="in">
+<input id="height" placeholder="in">
     
 <label>Depth</label>
-<input id="numb" placeholder="in">
+<input id="depth" placeholder="in">
     
 <label>Inside Cabinet</label>
-<input id="numb" placeholder="°F">
+<input id="incab" placeholder="°F">
 
  <label>Outside Cabinet</label>
-<input id="numb" placeholder="°F">
+<input id="oucab" placeholder="°F">
 
 <label>Maximum Heat</label><br><br>
-<input id="numb" placeholder="Watts">
+<input id="maxhe" placeholder="Watts">
 
 <button type="button" onclick="myFunction()">Calculate</button>
+    </form>
 
 <p id="demo"></p>
 
@@ -40,6 +41,12 @@ function myFunction() {
     text = "Input OK";
   }
   document.getElementById("demo").innerHTML = text;
+}
+</script>
+    
+<script>
+function myFunction() {
+  alert("The form was submitted");
 }
 </script>
 
