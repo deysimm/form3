@@ -5,7 +5,6 @@
 <h2>Calculator</h2>
 
 <h3>Cabinet Specifications</h3>
-<form onsubmit="myFunction()">
 <label>Width</label>
 <input id="width" placeholder="in">
 
@@ -24,8 +23,7 @@
 <label>Maximum Heat</label><br><br>
 <input id="maxhe" placeholder="Watts">
 
-<button type="button" onclick="myFunction()">Calculate</button>
-    </form>
+<button id="btn" type="button" onclick="myFunction()">Calculate</button>
 
 <p id="demo"></p>
 
@@ -45,8 +43,11 @@ function myFunction() {
 </script>
     
 <script>
+document.getElementById("fbtn").addEventListener("submit", myFunction);
 function myFunction() {
-  alert("The form was submitted");
+  text="Help me find this:";
+}
+</script>
 }
 </script>
 
