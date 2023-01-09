@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-    
-<script src="form.js">
-</script>
 
 <h2>Calculator</h2>
-<form id="form3">
+<form id="form3" onsubmit="confirmInput()">
 <h3>Cabinet Specifications</h3>
 <label>Width</label>
 <input id="width" placeholder="in">
@@ -30,6 +27,13 @@
     </form>
 
     <p id="demo"></p>
+    
+    <script>
+function confirmInput() {
+  width = document.forms[0].width.value;
+  alert("Hello " + width + "! You will now be redirected to www.w3Schools.com");
+}
+</script>
 
 </body>
 </html> 
