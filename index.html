@@ -1,24 +1,31 @@
+<!DOCTYPE html>
 <html>
 <body>
-<form>
-<h2>Cabinet Dimensions</h2>
-Height:<input type="number" name="height">
-Width: <input type="number" name="width">
-Depth: <input type="number" name="depth">
-<h2>Open/Exposed Cabinet Surfaces</h2>
-  <input type="checkbox" id="top" name="top" value="top">
-  <label for="top"> Top</label><br>
-    <input type="checkbox" id="top" name="top" value="top">
-  <label for="top"> Bottom</label><br>
-    <input type="checkbox" id="front" name="front" value="front">
-  <label for="front"> Front</label><br>
-    <input type="checkbox" id="back" name="back" value="back">
-  <label for="back"> Back</label><br>
-      <input type="checkbox" id="left" name="left" value="left">
-  <label for="top"> Left</label><br>
-    <input type="checkbox" id="right" name="right" value="right">
-  <label for="top">Right</label><br>
-<input type="submit">
-</form>
+
+<h2>JavaScript Validation</h2>
+
+<p>Please input a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  // Get the value of the input field with id="numb"
+  let x = document.getElementById("numb").value;
+  // If x is Not a Number or less than one or greater than 10
+  let text;
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
 </body>
-</html>
+</html> 
